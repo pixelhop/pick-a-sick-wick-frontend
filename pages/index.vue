@@ -2,7 +2,7 @@
   <div>
     <section class="relative mb-20 -mt-24 border-b-4 md:mb-10 header border-brand-beige">
       <div class="absolute inset-0 z-0 overflow-hidden">
-        <img src="../assets/images/header-bg.jpg" class="object-cover w-full h-full" alt="Paris" />
+        <img :src="HeaderBg" class="object-cover w-full h-full" alt="Pick a sick wick" />
       </div>
 
       <div class="relative z-20 h-full header-content">
@@ -49,8 +49,11 @@
 </template>
 
 <script setup>
+import HeaderBg from 'assets/images/header-bg.jpg';
+console.log({ HeaderBg });
 const config = useRuntimeConfig();
 const { data: products } = await useFetch(`${config.API_URL}/api/products?pagination[start]=0&pagination[limit]=4&populate=*`)
+console.log(products);
 </script>
 
 <style scoped>

@@ -1,6 +1,7 @@
 <template>
   <button class="flex items-center snipcart-checkout">
-    <span class="pr-2 ml-3 text-lg font-semibold text-brand-grey-800 snipcart-total-price">£24</span>
+    <span class="pr-2 ml-3 text-lg font-semibold text-brand-grey-800 snipcart-total-price" />
+
     <Cart class="w-6" />
   </button>
 </template>

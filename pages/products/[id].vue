@@ -10,8 +10,18 @@
         <p class="pr-12 mb-6 text-brand-grey-400">{{ product.data.attributes.Description }}</p>
 
         <div class="flex items-center">
-          <input-field type="number" class="mr-4" />
-          <btn>Add to basket</btn>
+          <input-field type="number" class="mr-4" min="1" v-model="quantity" />
+          <btn
+            class="snipcart-add-item"
+            :data-item-id="product.data.id"
+            :data-item-price="product.data.attributes.Price"
+            :data-item-description="product.data.attributes.Description"
+            :data-item-name="product.data.attributes.Title"
+            :data-item-image="imageUrl"
+            :data-item-quantity="quantity"
+            :modelValue="pageTitle"
+            @update:modelValue="pageTitle = $event"
+          >Add to basket</btn>
         </div>
       </div>
     </Container>
@@ -38,9 +48,17 @@
 <script setup>
 const route = useRoute();
 const config = useRuntimeConfig();
+const quantity = ref(1);
 const { data: products } = await useFetch(`${config.API_URL}/api/products?populate=*`)
 const { data: product } = await useFetch(`${config.API_URL}/api/products/${route.params.id}?populate=*`)
-</script>
+const imageUrl = computed(() => {
+  if (!product.value.data) {
+    return null;
+  }
+
+  return `${config.API_URL}${product.value.data.attributes.Image.data.attributes.url}`
+});
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          </script>
 
 <style scoped>
 .product-image {

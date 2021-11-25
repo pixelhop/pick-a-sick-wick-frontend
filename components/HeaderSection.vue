@@ -1,5 +1,5 @@
 <template>
-  <header class="fixed z-50 w-full py-2">
+  <header class="fixed z-10 w-full py-2">
     <div class="grid items-center w-full grid-cols-12 px-4 mx-auto">
       <div class="col-span-3">
         <nuxt-link to="/">

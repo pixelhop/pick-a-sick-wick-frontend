@@ -50,10 +50,8 @@
 
 <script setup>
 import HeaderBg from 'assets/images/header-bg.jpg';
-console.log({ HeaderBg });
 const config = useRuntimeConfig();
 const { data: products } = await useFetch(`${config.API_URL}/api/products?pagination[start]=0&pagination[limit]=4&populate=*`)
-console.log(products);
 </script>
 
 <style scoped>

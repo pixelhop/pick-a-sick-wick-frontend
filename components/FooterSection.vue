@@ -2,7 +2,7 @@
   <footer class="py-12 text-white bg-brand-grey-800">
     <Container class="grid grid-cols-12 gap-6">
       <div class="col-span-12 md:col-span-6">
-        <img src="assets/images/logo-white.svg" class="w-32" alt="Pick a Sick Wick" />
+        <img :src="LogoWhite" class="w-32" alt="Pick a Sick Wick" />
         <p
           class="py-4 md:w-4/5"
         >Pick a Sick Wick is a JAMStack demo site built with Nuxt 3, Strapi 4 and Snipcart. If you are interested in how it was built, find out more here: JAMStack E-commerce with Nuxt 3, Strapi 4, and Snipcart.</p>
@@ -37,5 +37,6 @@
 </template>
 
 <script setup>
-// import LogoWhite from 'assets/images/logo-white.svg';
+// We have to import images like this because Nuxt build doesn't incude them otherwsie
+import LogoWhite from 'assets/images/logo-white.svg';
 </script>

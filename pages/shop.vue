@@ -12,7 +12,7 @@
         class="col-span-1"
         v-for="product in products.data"
         :key="product.id"
-        product="product"
+        :product="product"
       />
     </div>
   </Container>

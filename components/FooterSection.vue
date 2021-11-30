@@ -17,10 +17,10 @@
             <nuxt-link to="/">About</nuxt-link>
           </li>
           <li class="underline list-disc list-inside">
-            <nuxt-link to="/">Shop</nuxt-link>
+            <nuxt-link to="/shop">Shop</nuxt-link>
           </li>
           <li class="underline list-disc list-inside">
-            <nuxt-link to="/">Contact</nuxt-link>
+            <nuxt-link to="/contact">Contact</nuxt-link>
           </li>
         </ul>
       </div>

@@ -7,7 +7,7 @@
 
       <div class="relative z-20 h-full header-content">
         <div class="absolute flex flex-col justify-center p-8 mx-auto hero-box">
-          <div class="px-6 py-8 bg-white rounded-lg drop-shadow-2xl">
+          <div class="relative px-6 py-8 bg-white rounded-lg drop-shadow-2xl">
             <heading tag="h3" font-style="h3">Smelly candles</heading>
             <heading tag="h2" font-style="h2">Only the sickest wicks</heading>
             <p class="pb-4 pr-4 text-brand-gray font-body">

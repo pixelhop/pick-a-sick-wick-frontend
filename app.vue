@@ -7,6 +7,10 @@
 body {
   @apply text-brand-grey bg-brand-beige-300;
 }
+
+.snipcart-modal__container {
+  z-index: 100;
+}
 </style>
 
 <script setup>

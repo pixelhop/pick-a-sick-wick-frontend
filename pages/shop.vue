@@ -1,8 +1,8 @@
 <template>
   <Container class="pt-12">
     <div class="pb-8 text-center">
-      <Heading tag="h3" font-style="h3">The Shop</heading>
-      <Heading tag="h2" font-style="h2" class="mb-2">All the sick wicks</heading>
+      <Heading tag="h3" font-style="h3">The Shop</Heading>
+      <Heading tag="h2" font-style="h2" class="mb-2">All the sick wicks</Heading>
       <p
         class="w-3/4 px-4 pb-4 mx-auto text-center lg:w-2/6 text-brand-grey-400"
       >All our candles our hand made and 100% verified to satisfy any pyromaniac’s itch to burn things in a safe way.</p>

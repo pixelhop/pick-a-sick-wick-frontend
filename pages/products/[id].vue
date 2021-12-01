@@ -5,7 +5,7 @@
         <ProductImage :product="product.data" />
       </div>
       <div class="col-span-12 md:col-span-6 lg:col-span-7">
-        <heading tag="h2" font-style="h1">{{ product.data.attributes.Title }}</heading>
+        <Heading tag="h2" font-style="h1">{{ product.data.attributes.Title }}</heading>
         <p class="mb-6 text-2xl text-brand-grey-600">£{{ product.data.attributes.Price }}</p>
         <p class="pr-12 mb-6 text-brand-grey-400">{{ product.data.attributes.Description }}</p>
 
@@ -27,8 +27,8 @@
     </Container>
     <Container>
       <div class="pb-8">
-        <heading tag="h3" font-style="h3">Related products</heading>
-        <heading tag="h2" font-style="h2">Other sick wicks</heading>
+        <Heading tag="h3" font-style="h3">Related products</heading>
+        <Heading tag="h2" font-style="h2">Other sick wicks</heading>
       </div>
       <div class="grid grid-cols-2 gap-12 md:grid-cols-4">
         <product-teaser

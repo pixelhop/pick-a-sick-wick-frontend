@@ -1,6 +1,6 @@
 <template>
   <div class="bg-gray-100 shadow-xl aspect-w-1 aspect-h-1">
-    <img :src="imageUrl" :alt="product.attributes.Title" />
+    <img :src="imageUrl" :alt="product.attributes.Title" loading="lazy" />
   </div>
 </template>
 

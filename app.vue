@@ -1,4 +1,5 @@
 <template>
+  <Title>Pick a Sick Wick - Candle Shop</Title>
   <NuxtPage />
 </template>
 
